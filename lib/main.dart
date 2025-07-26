@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const AvProApp());
+  runApp(const AvproApp());
 }
 
-class AvProApp extends StatelessWidget {
-  const AvProApp({super.key});
+class AvproApp extends StatelessWidget {
+  const AvproApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +14,9 @@ class AvProApp extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('AVPRO'),
-        ),
-        body: const Center(
-          child: Text('Proyecto AVPRO limpio para Codemagic'),
-        ),
+      home: const Scaffold(
+        appBar: AppBar(title: Text('AVPRO')),
+        body: Center(child: Text('Bienvenido a AVPRO')),
       ),
     );
   }
