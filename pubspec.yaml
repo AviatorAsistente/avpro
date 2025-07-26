@@ -1,0 +1,16 @@
+name: avpro
+description: Proyecto AVPRO limpio para Codemagic
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  charts_flutter: ^0.12.0
+  intl: ^0.17.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
